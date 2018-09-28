@@ -1,0 +1,22 @@
+.tab{
+	margin-top:25%;
+	height:auto;
+	font-family:Times New Roman;
+	font-size:16px;
+	font-weight:bold;
+	color:black;
+}
+.required{
+	color:red;
+}
+.table-bordered{
+	border:6px solid black;
+}
+.inner1{
+	font-size:16px;
+	padding:15px;
+	font-family:'roboto';
+}
+.putleft{
+	float:left;
+}

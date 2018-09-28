@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Police management</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link type="text/css" rel="stylesheet" media="all" href="complaint.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Chicle|Roboto|FontAwesome" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="validation.js"></script>
+  <script>
+  function myFunction(){
+  var x=document.myForm.naccused.value; 
+   for(i=1;i<=x;i++){
+   var demo;
+    var table=document.getElementById("maintab")
+	var row1=table.insertRow(16)
+	var cell1=row1.insertCell(0)
+	var cell2=row1.insertCell(1)
+	cell1.innerHTML="Name"
+	demo = document.createElement("input");
+	demo.setAttribute("type","text"); 
+	demo.setAttribute("size","70%");
+	cell2.appendChild(demo);
+	var row2=table.insertRow(17)
+	var cell1=row2.insertCell(0)
+	var cell2=row2.insertCell(1)
+	cell1.innerHTML="Mobile No."
+	demo = document.createElement("input");
+	demo.setAttribute("type","text"); 
+	demo.setAttribute("size","30%");
+	cell2.appendChild(demo);
+  }
+  }
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" style="opacity:0.9">
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-4 putleft"><img class="img-responsive" src="image/policelogo2.png" alt="logo"></div>
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <div class="col-sm-4 putleft"><img class="img-responsive" src="image/onlinefir.jpg" alt="logo"></div>
+  <div class="container collapse navbar-collapse col-sm-2 navbar-right" aria-expanded="true" id="myNavbar">
+  <ul class="nav nav-pills inner1">
+	                   <li class="active"><a href="index.html" >Home </a></li>
+					   </ul>
+	  </div>
+</div>
+</div>
+</nav>
+<div class="container form-group">
+ <form name="myForm" action="#" onsubmit="return validateform()" method="post">
+<table class="table table-bordered table-striped tab" id="maintab" name="mytable">
+<tr>
+<td colspan="2">INSTRUCTIONS:<br/><br/> <ol>
+<li style="padding:10px">Fill in the form carefully</li>
+<li style="padding:10px">The Field marked (<span class="required">*</span>)are mandantory</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="font-size:24px;padding:10px;col-span:2"><center>VICTIMS DETAIL </center></td> 
+</tr> 
+<tr>
+<td class="col-sm-5">Name<span class="required">*</span></td>
+<td class="col-sm-7"><input type="text" name="name" size="70%"/></td>
+</tr>
+<tr>
+<td class="col-sm-5">Father's Name<span class="required">*</span></td>
+<td class="col-sm-7"><input type="text" name="fname" size="70%"/></td>
+</tr>
+<tr>
+<td class="col-sm-5">UIDAI No.(Aadhar number)<span class="required">*</span></td>
+<td class="col-sm-7"><input type="text" name="uidai" size="50%"/></td>
+</tr>
+<tr>
+<td class="col-sm-5">Mobile No.<span class="required">*</span></td>
+<td class="col-sm-7"><input type="text" name="mobile" size="50%"/></td>
+</tr>
+<tr>
+<td class="col-sm-5">Email Address<span class="required">*</span></td>
+<td class="col-sm-7"><input type="text" name="email" size="40%"/>&nbsp;(eg. abcde@mail.com)</td>
+</tr>
+<tr>
+<td>ADDRESS LINE 1 :(street name)<span class="required">*</span> </td>
+<td><input type="text" name="aline1" size="80%"/> </td>
+</tr>
+<tr>
+<td>ADDRESS LINE 2 :(land mark,district)<span class="required">*</span> </td>
+<td><input type="text" name="aline2" size="80%"/> </td>
+</tr>
+<tr>
+<td colspan="2" style="font-size:24px;padding:10px;col-span:2"><center>Information Report </center></td> 
+</tr>
+<tr>
+<td class="col-sm-5">Date of incident<span class="required">*</span></td>
+<td class="col-sm-7"><input type="date" name="date" size="70%"/></td>
+</tr>
+<tr>
+<td class="col-sm-5">Place of incident<span class="required">*</span></td>
+<td class="col-sm-7"><input type="text" name="place" size="30%"/></td>
+</tr>
+<tr>
+<td class="col-sm-5">District of incident<span class="required">*</span></td>
+<td class="col-sm-7"><input type="text" name="district" size="30%"/></td>
+</tr>
+<tr>
+<td class="col-sm-5" >Details of incident<span class="required">*</span></td>
+<td class="col-sm-7" ><textarea name="details" size="70%"></textarea></td>
+</tr>
+<tr>
+<td colspan="2" style="font-size:24px;padding:10px;col-span:2"><center>Accused details (if any) </center></td> 
+</tr>
+<tr id="accused">
+<td class="col-sm-5" >No of Accused</td>
+<td class="col-sm-7" ><input type="text" name="naccused" size="30%" onfocusout="myFunction()"/></td>
+</tr>
+</table>
+<center><button class="btn-success" type="submit" name="submit">Submit</button></center>
+</div>
+</body>
+</html>

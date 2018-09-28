@@ -1,0 +1,157 @@
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Chicle|Roboto|FontAwesome" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="signup.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style1.css"/>
+  <style>
+   body{
+	background-image:url("bg1.jpg");
+	height:auto;
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed;
+    }  
+   #cp
+   {
+    margin-top:150px;
+	width:100%;
+	font-size:40px;
+	text-align:left;
+	background-color:#D1D0CE;
+	font-family:calibri;
+	height:100px;
+	border:2px solid #B6B6B4;
+	border-left-width:0px;
+	border-right-width:0px;//#F1F3F0;
+   }
+   #cp1
+   {
+    position:relative;
+	left:35px;
+	top:24px;
+	color:#3D3C3A;
+   }
+   hr
+   {
+    align:center;
+	width:500px;
+	color:black;
+   }
+   #form
+   {
+    font-family:bahnschrift;
+	font-size:20px;
+	margin: 0 auto;
+	//margin-left:150px;
+	//margin-top:60px;
+    width:100%;
+	height:auto;
+	//border:3px solid #8EC4FC;
+	background-color:#c2cbd1;
+   }
+   .field
+   {
+    margin-left:240px;
+    
+	width:300px;
+	height:35px;
+   }
+   .s
+   {
+    font-size:15px;
+   }
+   .inner1{
+	font-size:16px;
+	padding:15px;
+	font-family:'roboto';
+    }
+  </style>
+ </head>
+ <body>
+ <!..
+   <div id="cp">
+    <SPAN ID="cp1">
+	New User Registration
+	</span>
+   </div>
+   ..>
+   <nav class="navbar navbar-default navbar-fixed-top" style="opacity:0.9">
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-4 putleft"><img class="img-responsive" src="image/policelogo2.png" alt="logo"></div>
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+  <div class="container collapse navbar-collapse col-sm-8 navbar-right" aria-expanded="true" id="myNavbar">
+  <ul class="nav nav-pills inner1">
+	                   <li><a href="index.html" >Home </a></li>
+						<li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Complaint
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="login.html">e-FIR</a></li>
+                        <li><a href="login.html">View FIR</a></li>
+                        </ul>
+                        </li>
+						<li><a href="contact.html">Contact us </a></li>
+						<li class="active"><a href="#">sign up </a></li>
+					    </ul>
+	  </div>
+</div>
+</div>
+</nav>
+   <center>
+   <h4 style="font-family:Bradley hand ITC;font-size:23px;font-weight:bold;color:white;margin-top:200px;"><span style="color:white">Create Your Account</span><br/><br/>
+   It will not take long.</h4>
+   </center>
+   <hr size="2px" noshade="noshade"><br/><br/>
+   <form action="signup.php" name="myForm" method="post" onsubmit="return validateform()">
+	<div classA ="container form">
+	 <div style="height:auto;float:left;" class="container col-sm-6">
+	 <table cellspacing="18">
+	  <tr><td><input type="text" name="username" class="field" placeholder="Username" style="margin-top:100px;" /></td></tr>
+	  <tr><td><input type="text" name="name" class="field" placeholder="Name" style="margin-top:15px" /></td></tr>
+	  <tr><td><input type="text" name="email" class="field" placeholder="Email" style="margin-top:15px"/></td></tr>
+	  <tr><td><input type="password" name="password" class="field" placeholder="Password" style="margin-top:15px" /></td></tr>
+	  <tr><td style="color:white;"><input type="radio" name="gender" style="margin-left:240px;margin-top:20px" required />&nbsp;Female&nbsp;&nbsp;
+	          <input type="radio" name="gender" />&nbsp;Male&nbsp;&nbsp;
+			  <input type="radio" name="gender" />&nbsp;Others
+	  </td></tr>
+	  <tr><td><input type="text" name="city" class="field" placeholder="Enter your city?" style="margin-top:15px" /></td></tr>
+	  <tr><td style="color:white;margin-top:15px"><input type="radio" name="occupation" style="margin-left:240px;margin-top:15px;" required />&nbsp;Student&nbsp;&nbsp;
+	          <input type="radio" name="occupation" />&nbsp;Professional&nbsp;&nbsp;
+			  <input type="radio" name="occupation" />&nbsp;Other&nbsp;&nbsp;
+	  </td></tr>
+	  <tr><td style="color:white;"><input type="checkbox" style="margin-left:240px;margin-top:50px;" required />&nbsp;I agree to the <a href="fchfh" style="text-decoration:none;"> terms and conditions</a></td></tr>
+	  <tr><td>
+	  <input type="submit" value="Sign Up" class="field" style="border:4px solid #0041C2;margin-top:20px;border-radius:5px;background-color:#0041C2;font-size:19px;color:white"></td></tr>
+	  </td></tr>
+	  </table>
+	 </div>
+	 <div style="width:2px;height:auto;float:left;background-color:gray;"></div>
+	 <div style="height:auto;float:left;" class="container col-sm-6">
+	  <div style="width:400px;height:500px;background-color:#a9b2b7;margin-left:40px;margin-top:100px;border-top:2px solid blue;">
+	   <br/><span style="margin-left:20px;margin-top:20px;font-family:calibri;">Username Example<br/><span style="margin-left:20px;font-family:calibri;"><b>john123</b> or <b>john_123</b></span></span>
+	   <hr style="margin-left:20px;width:350px;" noshade="noshade" >
+	   
+	   <ul type="disc" style="width:300px;">
+	    <li>Must start with an <b>alphabet in lowercase</b></li>
+		<li>Must be <b>between 4 to 14 characters</b></li>
+		<li>Subsequent characters can be anything between <b>an alphabet in lowercase, a digit or an underscore</b></li>
+	   </ul>
+	   <hr style="margin-left:20px;width:350px;size:2px;" noshade="noshade" width="2px" >
+	   <br/>
+	   <span style="margin-left:20px;"><b>Note: </b>Choose wisely your username, for<br/> <span style="margin-left:20px;">you will not be able to change it later</span></span>
+	  </div>
+	 </div>
+	</div>
+   </form>
+ </body>
+</html>

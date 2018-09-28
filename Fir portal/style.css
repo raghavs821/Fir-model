@@ -1,0 +1,43 @@
+ body{
+	background-image:url("bg1.jpg");
+	height:auto;
+	background-size: cover;
+	background-position: center;
+}
+.inner1{
+	font-size:16px;
+	padding:15px;
+	font-family:'roboto';
+}
+.putleft{
+	float:left;
+}
+.putright{
+	float:right;
+}
+.login-page{
+	width: 360px;
+	padding: 10% 0 0;
+	margin: auto;
+}
+.central{
+	width:30%;
+	height:auto;
+    margin: 0 auto;
+	margin-top:120px;
+	border:0px solid black;
+	position:relative;
+}
+.central1{
+	width:100%;
+	background-color:lightgray;
+	border-radius:10px 10px 0px 0px;
+	padding:15px;
+}
+.central2{
+	width:100%;
+	background-color:rgb(244,244,244);
+	border-radius:0px 0px 10px 10px;
+	padding:15px;
+}
+	
